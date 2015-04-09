@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RoleModel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="WCFServices" version="2.5.6496.10" xmlns="http://schemas.microsoft.com/ServiceHosting/2008/10/ServiceDefinition">
+  <Runtime>
+    <EntryPoint>
+      <NetFxEntryPoint assemblyName="WCFServiceWebRole1.dll" targetFrameworkVersion="v4.0" />
+    </EntryPoint>
+  </Runtime>
+  <Properties>
+    <Property name="TargetFrameworkVersion" value="v4.5" />
+    <Property name="RoleType" value="Web" />
+    <Property name="RoleName" value="WCFServices" />
+    <Property name="ProjectName" value="WCFServices" />
+    <Property name="Configuration" value="Release" />
+    <Property name="Platform" value="AnyCPU" />
+    <Property name="SetConfiguration" value="Configuration=Release" />
+    <Property name="SetPlatform" value="Platform=AnyCPU" />
+    <Property name="RoleTargetFramework" value="v4.5" />
+    <Property name="OutputDir" value="D:\Programação\AzureProject\AzureProject\obj\Release\WCFServices\" />
+    <Property name="EntryPoint" value="WCFServiceWebRole1.dll" />
+    <Property name="SourceDir" value="D:\Programação\AzureProject\WCFServiceWebRole1\" />
+    <Property name="SitePhysicalPath" value="D:\Programação\AzureProject\AzureProject\obj\Release\WCFServices\" />
+    <Property name="TargetRuntimeVersion" value="v4.0" />
+  </Properties>
+  <Sites>
+    <Site name="Web" physicalDirectory="D:\Programação\AzureProject\AzureProject\obj\Release\WCFServices\">
+      <Bindings>
+        <Binding name="Endpoint1" endpointName="Endpoint1" />
+        <Binding name="Endpoint2" endpointName="Endpoint2" />
+      </Bindings>
+    </Site>
+  </Sites>
+</RoleModel>
